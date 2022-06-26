@@ -1,1 +1,1 @@
-#include "bonobo"
+#include "bonobo/Core/syntax.h"
