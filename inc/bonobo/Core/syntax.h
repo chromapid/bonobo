@@ -5,6 +5,9 @@
  * @copyright Copyright (c) 2022
  */
 
+#ifndef BONO_CORE_SYNTAX_H
+#define BONO_CORE_SYNTAX_H
+
 #include <cassert>
 #include <cstdint>
 #include <limits>
@@ -35,7 +38,6 @@ enum class SyntaxTermInfo::Type : uint32_t {
 	functionTerm,
 	variableTerm,
 	constantTerm,
-
 	last = constantTerm
 };
 
@@ -49,3 +51,4 @@ inline uint32_t SyntaxTermInfo::Type SyntaxTermInfo::getOtherData() {
 }
 
 } // namespace bono
+#endif
